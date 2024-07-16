@@ -1,0 +1,23 @@
+
+.tblRowMatiriall-view {
+    -fx-background-color: #f8f8f8;
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-radius: 8;
+    -fx-background-insets: 10;
+    -fx-blend-mode: multiply;
+    -fx-border-color: #2c3e50;
+    -fx-border-image-insets: 5;
+    -fx-opacity: 1;
+    -fx-alignment: center;
+}
+.tblRowMatiriall-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* specify width */
+    height: 200px; /* specify height */
+}
+

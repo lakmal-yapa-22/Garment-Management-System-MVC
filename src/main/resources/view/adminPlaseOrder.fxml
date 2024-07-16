@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="995.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.AdminPlaseOrder">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="1006.0" prefWidth="957.0" style="-fx-background-color: #c0c4c5;">
+         <children>
+            <AnchorPane layoutX="57.0" layoutY="50.0" prefHeight="900.0" prefWidth="901.0" style="-fx-background-color: #0693e3; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="949.0" layoutY="-1.0" prefHeight="1007.0" prefWidth="951.0" style="-fx-background-color: #0693e3;">
+         <children>
+            <AnchorPane layoutX="-809.0" layoutY="50.0" prefHeight="901.0" prefWidth="1704.0" style="-fx-background-color: #fefffe; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <ImageView fitHeight="263.0" fitWidth="144.0" layoutX="1548.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="156.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/clear.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="364.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/save.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="584.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/update.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="780.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="289.0" layoutY="820.0" text="Net Total:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblOrderCart" layoutX="24.0" layoutY="367.0" prefHeight="418.0" prefWidth="1612.0" styleClass="tblRowMatiriall-view" stylesheets="@css%20file/tbl.css">
+                     <columns>
+                        <TableColumn fx:id="colItemCode" prefWidth="150.0" text="Product ID" />
+                        <TableColumn fx:id="colDescription" minWidth="0.0" prefWidth="178.0" text="Description" />
+                        <TableColumn fx:id="colQty" prefWidth="135.0" text="Qty" />
+                        <TableColumn fx:id="colUnitPrice" minWidth="0.0" prefWidth="144.0" text="Unit Price" />
+                        <TableColumn fx:id="colTotal" prefWidth="195.0" text="sub Total" />
+                        <TableColumn fx:id="colDiscountRate" prefWidth="197.0" text="Discount Rate        (  %  )" />
+                        <TableColumn fx:id="colDisscount" minWidth="0.0" prefWidth="206.0" text="discount" />
+                        <TableColumn fx:id="colFinalAmount" prefWidth="174.0" text="Final Amount" />
+                        <TableColumn fx:id="colAction" prefWidth="237.0" text="Action" />
+                     </columns>
+                  </TableView>
+                  <JFXButton buttonType="RAISED" layoutX="1433.0" layoutY="806.0" onAction="#btnPlaceOrderOnAction" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #34495e;" text="Place Order" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label layoutX="90.0" layoutY="55.0" text="Order Id:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderId" layoutX="231.0" layoutY="54.0" textFill="#3b05eb">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="135.0" text="Buyer Id:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbBuyerId" layoutX="171.0" layoutY="120.0" onAction="#cmbBuyerOnAction" prefHeight="33.0" prefWidth="203.0" />
+                  <Label layoutX="73.0" layoutY="259.0" text="Product Id:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbProductCode" layoutX="197.0" layoutY="242.0" onAction="#cmbProductOnAction" prefHeight="33.0" prefWidth="183.0" />
+                  <JFXButton fx:id="btnNew" buttonType="RAISED" layoutX="390.0" layoutY="126.0" onAction="#btnNewBuyerOnAction" prefHeight="21.0" prefWidth="74.0" style="-fx-background-color: #2ecc71;" text="NEW" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label layoutX="411.0" layoutY="259.0" text="Description:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDescription" layoutX="530.0" layoutY="258.0" textFill="#440ef5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="728.0" layoutY="323.0" text="Unit Price:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblUnitPrice" layoutX="822.0" layoutY="322.0" prefHeight="21.0" prefWidth="203.0" textFill="#2a1ce5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1034.0" layoutY="323.0" text="Qty. On Hand:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblQtyOnHand" layoutX="1178.0" layoutY="322.0" prefHeight="21.0" prefWidth="120.0" textFill="#3f08f5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="365.0" layoutY="57.0" text="Order date:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderDate" layoutX="473.0" layoutY="55.0" textFill="#3806d0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="386.0" layoutY="175.0" text="Company Name:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCompanyName" layoutX="534.0" layoutY="174.0" textFill="#560aee">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtQty" layoutX="1390.0" layoutY="257.0" onAction="#txtQtyOnAction" onKeyReleased="#PlaseOrderQtyOnKeyAction" prefHeight="37.0" prefWidth="85.0" />
+                  <Label layoutX="1338.0" layoutY="259.0" text="Qty:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="1510.0" layoutY="308.0" onAction="#btnAddToCartOnAction" prefHeight="48.0" prefWidth="123.0" style="-fx-background-color: #3498db;" text="Add to cart" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/cart(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label layoutX="882.0" layoutY="42.0" text="Order Time :" textFill="#272a8c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderTime" layoutX="1005.0" layoutY="41.0" textFill="#272a8c">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="55.0" prefWidth="77.0" style="-fx-background-color: #fefffe;" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblNetTotal" layoutX="402.0" layoutY="815.0" textFill="#4207f5">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="824.0" layoutY="176.0" text="Buyer Email:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmail" layoutX="942.0" layoutY="176.0" textFill="#4a05dd">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="305.0" layoutX="1194.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gif/Clothing1.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="661.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gif/place.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="165.0" fitWidth="176.0" layoutX="914.0" layoutY="662.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gif/discount1.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="144.0" fitWidth="218.0" layoutX="20.0" layoutY="749.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gif/discount.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="1459.0" layoutY="816.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/place_order.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="19.0" fitWidth="16.0" layoutX="393.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/save.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="770.0" layoutY="259.0" text="size :">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1092.0" layoutY="259.0" text="color :">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSize" layoutX="824.0" layoutY="256.0" textFill="#560aee">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblColor" layoutX="1152.0" layoutY="260.0" textFill="#560aee">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="55.0" fitWidth="74.0" layoutX="13.0" layoutY="13.0" onMouseClicked="#btnBackOnclicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/back-button%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

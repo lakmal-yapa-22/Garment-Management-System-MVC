@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.Buyer.Shirt">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="940.0" style="-fx-background-color: #c0c4c5;">
+         <children>
+            <AnchorPane layoutX="78.0" layoutY="60.0" prefHeight="878.0" prefWidth="861.0" style="-fx-background-color: #0693e3; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="931.0" prefHeight="1000.0" prefWidth="969.0" style="-fx-background-color: #0693e3;">
+         <children>
+            <AnchorPane layoutX="-771.0" layoutY="60.0" prefHeight="878.0" prefWidth="1660.0" style="-fx-background-color: #fefffe; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <Button layoutX="46.0" layoutY="830.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="37.0" prefWidth="166.0" style="-fx-background-color: #ff7675;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="178.0" fitWidth="220.0" layoutX="1477.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane fx:id="AnchorPaneEmployee" layoutX="37.0" layoutY="107.0" prefHeight="338.0" prefWidth="404.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="310.0" fitWidth="417.0" layoutX="1.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/shirt_dribbble.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPaneRowMatirial1" layoutX="809.0" layoutY="55.0" prefHeight="384.0" prefWidth="386.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="347.0" fitWidth="372.0" layoutX="5.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/sleevesizechart.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="412.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shirt  /  long sleeve shirt" wrappingWidth="404.072265625">
+                     <font>
+                        <Font name="Dyuthi Regular" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="485.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Care Instructions:-">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="517.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wash at (30 centigrades or below)" />
+                  <Text layoutX="517.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wash dark colors separately" />
+                  <Text layoutX="516.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ironing medium temperature" />
+                  <Text layoutX="516.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do not dry clean" />
+                  <Text layoutX="516.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tumble dry low heat" />
+                  <Text layoutX="517.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do not bleach" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1252.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/genuvin.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tblT_shirt" layoutX="55.0" layoutY="504.0" prefHeight="303.0" prefWidth="1160.0">
+                     <columns>
+                        <TableColumn fx:id="colProductId" prefWidth="212.0" text="product ID" />
+                        <TableColumn fx:id="colQty" prefWidth="135.0" text="qty" />
+                        <TableColumn fx:id="colPrice" prefWidth="215.0" text="price" />
+                        <TableColumn fx:id="colType" prefWidth="231.0" text="product Type" />
+                        <TableColumn fx:id="colColor" prefWidth="179.0" text="color" />
+                        <TableColumn fx:id="colSize" prefWidth="187.0" text="size" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="802.0" layoutY="831.0" mnemonicParsing="false" onAction="#nextPageOnAction" prefHeight="37.0" prefWidth="63.0" text="&gt;&gt;" />
+                  <Text fill="#7814d9" layoutX="730.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" text="page">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="664.0" layoutY="831.0" mnemonicParsing="false" onAction="#BacknextPageOnAction" prefHeight="37.0" prefWidth="63.0" text="&lt;&lt;" />
+                  <ImageView fitHeight="178.0" fitWidth="200.0" layoutX="524.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/highQulity.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="166.0" layoutX="1105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../gif/place.gif" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnOrder" buttonType="RAISED" contentDisplay="TOP" layoutX="1309.0" layoutY="4.0" onAction="#btnOrderOnAction" prefHeight="48.0" prefWidth="178.0" style="-fx-background-color: #e74c3c; -fx-border-color: white;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="     Place Order" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="1324.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/place_order.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="978.0" layoutY="828.0" mnemonicParsing="false" onAction="#ReportOnAction" prefHeight="37.0" prefWidth="166.0" style="-fx-background-color: #ff7675;" text="Report" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneRowMatirial" layoutX="489.0" layoutY="404.0" prefHeight="516.0" prefWidth="372.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="503.0" fitWidth="412.0" layoutX="20.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/shirtSizeChart.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

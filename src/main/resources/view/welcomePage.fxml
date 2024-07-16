@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: ffffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.WelcomPageController">
+   <children>
+      <ImageView fitHeight="528.0" fitWidth="1065.0" layoutX="243.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gif/welcom.gif" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-4.0" layoutY="803.0" prefHeight="200.0" prefWidth="1900.0" style="-fx-background-color: #0693e3;" />
+      <AnchorPane fx:id="anchorPaneAdmin" layoutX="1427.0" layoutY="99.0" onMouseClicked="#AncapaneAdminOnAction" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text layoutX="99.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="218.08965301513672">
+               <font>
+                  <Font name="Dhurjati" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="234.0" fitWidth="233.0" layoutX="40.0" layoutY="70.0" onMouseClicked="#adminOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/admin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneBuyer" layoutX="1092.0" layoutY="100.0" onMouseClicked="#AnchorBuyerMouseOnClick" prefHeight="268.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="227.0" layoutX="18.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="201.0" fitWidth="251.0" layoutX="54.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/buyer12.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="70.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buyer" wrappingWidth="218.08965301513672">
+               <font>
+                  <Font name="Dhurjati" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

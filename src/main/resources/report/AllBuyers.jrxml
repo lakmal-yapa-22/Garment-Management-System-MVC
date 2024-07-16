@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3ff93968-b73c-4356-b039-ba014f24b835">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Buyer]]>
+	</queryString>
+	<field name="buyer_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="buyer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="buyer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Buyer"/>
+	</field>
+	<field name="contact_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="contact_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="contact_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Buyer"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Buyer"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Buyer"/>
+	</field>
+	<field name="company_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="company_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="company_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Buyer"/>
+	</field>
+	<group name="buyer_id">
+		<groupExpression><![CDATA[$F{buyer_id}]]></groupExpression>
+	</group>
+	<group name="contact_number">
+		<groupExpression><![CDATA[$F{contact_number}]]></groupExpression>
+	</group>
+	<group name="address">
+		<groupExpression><![CDATA[$F{address}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<group name="company_name">
+		<groupExpression><![CDATA[$F{company_name}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="214" splitType="Stretch">
+			<staticText>
+				<reportElement x="158" y="67" width="260" height="30" uuid="f1c7c9a2-17f2-42d1-9da1-5163897aebad"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STAR GARMENTS PVT LTD- BUTTALA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="242" y="4" width="68" height="59" uuid="d9e555cf-b42b-4d21-9e68-cd407dcba4ae"/>
+				<imageExpression><![CDATA["/home/lakmal/Videos/starGarment/src/main/resources/image/Black Gold Simple Stars Logo (8).png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="172" y="84" width="215" height="30" uuid="69b020e3-1071-4a61-b494-80eee6a6a623"/>
+				<text><![CDATA[NO :Q7F8+483, Industrial Zone I, Buttala ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="96" width="100" height="30" uuid="09469893-3c3e-45be-96ff-7fe735a289f0"/>
+				<text><![CDATA[TEL : 0713346663        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="106" width="100" height="30" uuid="b41b01ec-a6f4-4496-b456-5dbd3984eb73"/>
+				<text><![CDATA[0552720023]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="20" y="172" width="517" height="20" uuid="436030b6-c8fe-44d0-a33a-5642f00031c1"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="100" height="30" uuid="d87cb69f-8d36-4c6c-8a66-1deeec8a9d4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66bf29f9-daf2-4fb2-bcc9-dcfd4a710ce0"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buyer ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="140" height="30" uuid="f086b225-5641-4a76-aaf2-de2ae3f53b04">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c5311167-311d-4d9b-bb2c-87ba3ee6d359"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[contact_number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="134" height="20" uuid="40e1626e-ec60-4565-a86d-29cd88b67136">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a2f4531-869f-4625-a357-b61e6bdb329f"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[company_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="100" height="30" uuid="05276f12-8cfc-4016-8efc-e960eb1bb332">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="907caa66-3b6c-4693-a0e9-fb9f4091f6cd"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="16" y="4" width="70" height="19" uuid="662fbe5b-9ed9-44dd-932b-2fb43f004e9d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66bf29f9-daf2-4fb2-bcc9-dcfd4a710ce0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{buyer_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="94" height="23" uuid="7fac1689-8c18-482b-9a44-caa16f431a31">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c5311167-311d-4d9b-bb2c-87ba3ee6d359"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{contact_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="23" uuid="d0e695e8-ba17-4570-bb92-da5e148159fd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a2f4531-869f-4625-a357-b61e6bdb329f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="99" height="23" uuid="9650770e-564b-4ec3-a850-33f4c009e9e1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="907caa66-3b6c-4693-a0e9-fb9f4091f6cd"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="253" y="32" width="137" height="30" uuid="b94ebba8-bc68-4d24-8507-15cf638deb45"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank you !]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

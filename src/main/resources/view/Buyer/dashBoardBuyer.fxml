@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.Buyer.DashBoard">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="940.0" style="-fx-background-color: #c0c4c5;">
+         <children>
+            <AnchorPane layoutX="78.0" layoutY="60.0" prefHeight="878.0" prefWidth="861.0" style="-fx-background-color: #0693e3; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="931.0" prefHeight="1000.0" prefWidth="969.0" style="-fx-background-color: #0693e3;">
+         <children>
+            <AnchorPane layoutX="-771.0" layoutY="60.0" prefHeight="878.0" prefWidth="1660.0" style="-fx-background-color: #fefffe; -fx-background-radius: 0 15 15 0;" styleClass="gradient-background" stylesheets="@../../css.css">
+               <children>
+                  <Button fx:id="btnLogOut" layoutX="25.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="61.0" prefWidth="68.0" style="-fx-background-color: #fefffe;" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane fx:id="AnchorAboutFactory" layoutX="81.0" layoutY="88.0" onMouseClicked="#AnchorAboutFactoryOnMouseClicked" prefHeight="302.0" prefWidth="345.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="235.0" fitWidth="328.0" layoutX="15.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/factory.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorRegisterBuyer" layoutX="486.0" layoutY="88.0" onMouseClicked="#AnchorRegisterBuyerMouseOnClick" prefHeight="302.0" prefWidth="345.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="266.0" fitWidth="330.0" layoutX="6.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/buyer1.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ancharPanePlaceOrder" layoutX="894.0" layoutY="88.0" onMouseClicked="#anchonPlaceOrderMouseProductOnClick" prefHeight="302.0" prefWidth="345.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="280.0" fitWidth="330.0" layoutX="28.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/ordernow.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="txtAboutFactory" fill="#3012da" layoutX="90.0" layoutY="423.0" onMouseClicked="#txtAboutFactoryMouseOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="About Factory" textAlignment="CENTER" wrappingWidth="311.6344909667969">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtPlaceOrder" fill="#3012da" layoutX="961.0" layoutY="427.0" onMouseClicked="#txtPlaceOrderMouseOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="place order" textAlignment="CENTER" wrappingWidth="251.35665893554688">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtProduct" fill="#3012da" layoutX="523.0" layoutY="422.0" onMouseClicked="#txtRegisterBuyerOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Buyer" textAlignment="CENTER" wrappingWidth="299.99999999999994">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="anchornTShirt" layoutX="91.0" layoutY="461.0" onMouseClicked="#ancharPaneTshirtMouseOnClick" prefHeight="302.0" prefWidth="345.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Label fx:id="lblRawMatirialCount" layoutX="265.0" layoutY="11.0">
+                           <font>
+                              <Font name="Dyuthi Regular" size="36.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="266.0" fitWidth="352.0" layoutX="26.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/shirtw.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ancapaneshirt" layoutX="492.0" layoutY="461.0" onMouseClicked="#ancapaneShirtOnMouseClick" prefHeight="302.0" prefWidth="345.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="259.0" fitWidth="330.0" layoutX="10.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/shirt_dribbble.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="txtTshirt" fill="#3012da" layoutX="117.0" layoutY="791.0" onMouseClicked="#txtTshirtOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="t-shirt &amp; long sleve t-shirt" textAlignment="CENTER" wrappingWidth="270.0">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="ancarPaneTrouser" layoutX="897.0" layoutY="461.0" onMouseClicked="#anchorPaneTrouserMouseOnClick" prefHeight="310.0" prefWidth="360.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="255.0" fitWidth="373.0" layoutX="45.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/productTrouser.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="txttrouser" fill="#3012da" layoutX="958.0" layoutY="804.0" onMouseClicked="#txtTrouserMouseOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="trouser &amp; pant" textAlignment="CENTER" wrappingWidth="219.69000244140625">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="201.0" fitWidth="200.0" layoutX="1455.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane fx:id="ancharPaneFrock" layoutX="1289.0" layoutY="252.0" onMouseClicked="#anchorPaneFrockMouseOnClick" prefHeight="302.0" prefWidth="345.0" style="-fx-background-radius: 15; -fx-background-color: ffffffff;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="280.0" fitWidth="345.0" layoutX="23.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../gif/frock.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="txtFrock" fill="#3012da" layoutX="1353.0" layoutY="589.0" onMouseClicked="#txtFrockOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="frock" textAlignment="CENTER" wrappingWidth="205.44827270507812">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtShirt" fill="#3012da" layoutX="539.0" layoutY="794.0" onMouseClicked="#txtShirtMouseOnClick" strokeType="OUTSIDE" strokeWidth="0.0" text="shirt &amp; long sleve shirt" textAlignment="CENTER" wrappingWidth="270.0">
+                     <font>
+                        <Font name="Dyuthi Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="61.0" fitWidth="68.0" layoutX="28.0" layoutY="18.0" onMouseClicked="#btnBackMouseOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/back-button%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

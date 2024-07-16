@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #fefffe;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.Buyer.AboutFactory1">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="801.0" prefHeight="199.0" prefWidth="1912.0" style="-fx-background-color: #0693e3;">
+         <children>
+            <Text fill="#f5f4f4" layoutX="69.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="69.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P.O BOX 1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="68.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="69.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELLAWYA ROAD 2, PHASE 1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="67.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUTTALA">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="67.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0713346662">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="69.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0552720023">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f4f4" layoutX="1574.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="star.lk">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1696.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/make_order.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <TextArea layoutX="229.0" layoutY="3.0" prefHeight="133.0" prefWidth="728.0" style="-fx-border-color: #fefffe; -fx-background-color: #fefffe;" text="At Star, we’re a world-class apparel sourcing, &#10;design and manufacturing company. &#10;We provide expert, seamless execution in product development,&#10; technical innovation, on-time delivery and personalized customer service to &#10;ensure the best quality and value for each of our customers.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="157.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transforming Ideas Into Products">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="65.0" layoutY="170.0" prefHeight="167.0" prefWidth="1051.0" style="-fx-background-color: #fefffe; -fx-border-color: #fefffe;" text="Driven by innovation, sustainability, collaboration and a commitment to quality,&#10; we work together to bring ideas to life.&#10;At the heart of our operations, is a 70,000 square foot Innovation &#10;Center where ideas are transformed into products. The center features a print resource library&#10;, sample room, pattern making facilities and world-class design capabilities enabling our teams and customers&#10; to work together collaboratively to bring ideas to life.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="128.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Trusted Partner">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="57.0" layoutY="376.0" prefHeight="149.0" prefWidth="859.0" style="-fx-background-color: #fefffe;" text="Founded in 1978, Star is one of the key players in the Sri Lankan apparel industry.&#10; We employ a team of over 8,500 dedicated associates whose core competencies&#10; are in maintaining the highest standards, ensuring timely deliveries and providing&#10; individualized customer service to a variety of premiere global brands.&#10;Our decades of experience, backed by solid and transparent business practices, &#10;make Star a partner that our customers and employees value and trust.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="128.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Komar Company">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="53.0" layoutY="569.0" prefHeight="223.0" prefWidth="1087.0" style="-fx-background-color: #fefffe;" text="We’re proud to be a Komar company. &#10;Komar is a global leader in the design, sourcing, manufacturing and distribution of apparel.&#10; Komar manages a diverse portfolio consisting of owned, licensed and private label brands.&#10;Established in 1908, Komar was founded on the guiding principle of ‘one reputation,&#10; real values’ and it continues to guide the company today.&#10; Komar is a trusted partner bringing its deep expertise and personalized approach to everything it does.&#10;In 2016 Star was acquired by Komar to expand operations and drive innovation&#10; and added value for its customers. Komar is committed to its operations in Sri Lanka and plans&#10; continued investment in operations and local communities.&#10;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="283.0" fitWidth="276.0" layoutX="1621.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/locatin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="358.0" fitWidth="364.0" layoutX="1156.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Black%20Gold%20Simple%20Stars%20Logo%20(8).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="57.0" layoutY="43.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="59.0" prefWidth="89.0" style="-fx-background-color: #fefffe;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="53.0" fitWidth="58.0" layoutX="77.0" layoutY="44.0" onMouseClicked="#backOnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icon/back-button%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="415.0" fitWidth="824.0" layoutX="1096.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../gif/star.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

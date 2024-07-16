@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="995.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.Buyer.BuyerSignUpControllerr">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="1006.0" prefWidth="957.0" style="-fx-background-color: #c0c4c5;">
+         <children>
+            <AnchorPane layoutX="57.0" layoutY="50.0" prefHeight="900.0" prefWidth="901.0" style="-fx-background-color: #0693e3; -fx-background-radius: 15 0 0 15;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="949.0" layoutY="-1.0" prefHeight="1007.0" prefWidth="951.0" style="-fx-background-color: #0693e3;">
+         <children>
+            <AnchorPane layoutX="-809.0" layoutY="50.0" prefHeight="901.0" prefWidth="1704.0" style="-fx-background-color: #fefffe; -fx-background-radius: 0 15 15 0;">
+               <children>
+                  <ImageView fitHeight="523.0" fitWidth="413.0" layoutX="1262.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="156.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/clear.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="364.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/save.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="584.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/update.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="780.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="760.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNUP" textAlignment="CENTER" wrappingWidth="295.69000244140625">
+                     <font>
+                        <Font name="Dyuthi Regular" size="64.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUseName" layoutX="774.0" layoutY="222.0" onKeyReleased="#userNameOnKeyReleased" prefHeight="36.0" prefWidth="328.0" promptText="Use Name" />
+                  <Text layoutX="774.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="774.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnsign" layoutX="838.0" layoutY="639.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" prefHeight="24.0" prefWidth="223.0" style="-fx-background-color: red;" text="SIGNUP">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="923.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="txtpassword" layoutX="774.0" layoutY="476.0" onKeyReleased="#passwordOnKeyReleased" prefHeight="36.0" prefWidth="328.0" promptText="password" />
+                  <TextField fx:id="txtEmail" layoutX="774.0" layoutY="320.0" onKeyReleased="#emailOnKeyReleased" prefHeight="36.0" prefWidth="328.0" promptText="email" />
+                  <Text layoutX="774.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtconformPassword" layoutX="774.0" layoutY="565.0" prefHeight="36.0" prefWidth="328.0" promptText="Conform Password" />
+                  <Text layoutX="777.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="conform Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="638.0" layoutY="771.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text layoutX="869.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="already have an account  ?">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtLogin" fill="BLUE" layoutX="1087.0" layoutY="816.0" onMouseClicked="#txtLoginOnMouseClickedAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="710.0" fitWidth="680.0" layoutX="39.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../gif/supplier.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.deb.Controller.BuyerDetailController">
+   <children>
+      <AnchorPane fx:id="root" layoutX="10.0" layoutY="10.0" prefHeight="1000.0" prefWidth="1900.0">
+         <children>
+            <AnchorPane layoutX="-7.0" prefHeight="1000.0" prefWidth="940.0" style="-fx-background-color: #c0c4c5;">
+               <children>
+                  <AnchorPane layoutX="78.0" layoutY="60.0" prefHeight="878.0" prefWidth="861.0" style="-fx-background-color: #0693e3; -fx-background-radius: 15 0 0 15;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="931.0" prefHeight="1000.0" prefWidth="969.0" style="-fx-background-color: #0693e3;">
+               <children>
+                  <AnchorPane layoutX="-771.0" layoutY="60.0" prefHeight="878.0" prefWidth="1660.0" style="-fx-background-color: #fefffe; -fx-background-radius: 0 15 15 0;">
+                     <children>
+                        <Text fx:id="text" layoutX="275.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buyer Detail" wrappingWidth="631.0233154296875">
+                           <font>
+                              <Font name="Dyuthi Regular" size="48.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="854.0" prefWidth="251.0" style="-fx-background-radius: 15 0 0 15; -fx-background-color: #ADD8E6;">
+                           <children>
+                              <JFXButton layoutX="8.0" layoutY="459.0" onAction="#btnDashBoardProductOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #007bff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="product" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton layoutX="10.0" layoutY="303.0" onAction="#DashBoardDashBoardOnClick" prefHeight="44.0" prefWidth="233.0" style="-fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa; -fx-background-color: #007bff;" styleClass="btnsup" text="DashBoard" textFill="#220202">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <stylesheets>
+                                    <URL value="@../css.css" />
+                                    <URL value="@../css%20file/css.css" />
+                                 </stylesheets>
+                              </JFXButton>
+                              <ImageView fitHeight="249.0" fitWidth="260.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Black%20Gold%20Simple%20Stars%20Logo%20(9).png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="31.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="35.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true" />
+                              <JFXButton layoutX="8.0" layoutY="567.0" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #FF000000; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="Buyer" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton layoutX="8.0" layoutY="407.0" onAction="#btnDashBoardSupplierOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #007bff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="Supplier" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton layoutX="6.0" layoutY="514.0" onAction="#btnDashBoardRowMatirialOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #007bff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="Raw Matirial" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton layoutX="9.0" layoutY="618.0" onAction="#btnDashBoardOrderOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #007bff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="Order" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton layoutX="9.0" layoutY="671.0" onAction="#btnDashBoardPaymentOrderOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #007bff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="payment" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton layoutX="7.0" layoutY="355.0" onAction="#btnDashBoardEmployeeOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #007bff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="Employee" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="KacstOne Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <TextField fx:id="searchId" layoutX="314.0" layoutY="99.0" onAction="#txtSearchOnAction" prefHeight="53.0" prefWidth="488.0" promptText=" search" style="-fx-background-radius: 120;">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="707.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/search.png" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tblBuyer" layoutX="305.0" layoutY="487.0" prefHeight="377.0" prefWidth="1331.0" style="-fx-background-color: #ADD8E6;" stylesheets="@css%20file/tbl.css">
+                           <columns>
+                              <TableColumn fx:id="colId" prefWidth="146.0" text="ID" />
+                              <TableColumn fx:id="colContacNumber" prefWidth="205.0" text="contact Number" />
+                              <TableColumn fx:id="colEmail" prefWidth="306.0" text="email" />
+                              <TableColumn fx:id="colCompanyName" prefWidth="296.0" text="company name" />
+                              <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="377.0" text="address" />
+                           </columns>
+                           <styleClass>
+                              <String fx:value="tblRowMatiriall-absolute" />
+                              <String fx:value="tblRowMatiriall-view" />
+                           </styleClass>
+                        </TableView>
+                        <Text layoutX="409.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buyer ID :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="317.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="464.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email:">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="321.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="417.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtBuyerID" fill="#570ce4" layoutX="555.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtBuyerTel" fill="#570ce4" layoutX="565.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtEmail" fill="#570ce4" layoutX="558.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtCompanyName" fill="#570ce4" layoutX="558.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txtAddress" fill="#570ce4" layoutX="556.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="668.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #007bff; -fx-border-color: #f19066; -fx-border-radius: 8; -fx-background-radius: 8;" styleClass="btnsup" text="CLEAR" textFill="#f8f8f8">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@../css.css" />
+                              <URL value="@../css%20file/css.css" />
+                           </stylesheets>
+                        </Button>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="697.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/clear.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="377.0" fitWidth="512.0" layoutX="1121.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gif/buyer1.gif" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="btnNew" buttonType="RAISED" layoutX="903.0" layoutY="119.0" onAction="#btnNewBuyerOnAction" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #2ecc71;" text="NEW" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="906.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/save.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="1383.0" layoutY="430.0" onAction="#reportOnAction" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #6D214F; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #f5f6fa;" styleClass="btnsup" stylesheets="@../css%20file/css.css" text="Report" textFill="#f8f8f8">
+                           <font>
+                              <Font name="KacstOne Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
