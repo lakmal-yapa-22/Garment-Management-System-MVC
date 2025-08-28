@@ -11,4 +11,4 @@ This project is developed using MVC architecture for managing garment operations
 ---
 
 ## 📸 Screenshot
-![App Screenshot](assets/images/screenshot.png)
+![App Screenshot](assets/Screenshot 2025-08-28 221236)
