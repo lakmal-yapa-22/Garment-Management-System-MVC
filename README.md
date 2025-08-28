@@ -16,3 +16,5 @@ This project is developed using MVC architecture for managing garment operations
 ![App Screenshot](https://github.com/lakmal-yapa-22/Garment-Management-System-MVC/blob/e03c5d1f1870ec287be46a369839973255c68f41/Screenshot%202025-08-28%20221101.png)
 ![App Screenshot](https://github.com/lakmal-yapa-22/Garment-Management-System-MVC/blob/0bcee7ff10a4822544c1352a08fd2d3c56a3e833/Screenshot%202025-08-28%20221155.png)
 ![App Screenshot](https://github.com/lakmal-yapa-22/Garment-Management-System-MVC/blob/f9d9b55f346198183b26ae1109c512618318470b/Screenshot%202025-08-28%20221236.png)
+## 🎥 Demo Video
+[Click here to watch the demo](assets/demo.mp4)
